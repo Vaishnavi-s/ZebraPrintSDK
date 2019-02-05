@@ -9,6 +9,24 @@
 #import <UIKit/UIKit.h>
 #import <ZebraPrint/ZebraPrinter.h>
 #import <ZebraPrint/MfiBtPrinterConnection.h>
+#import <ZebraPrint/DiscoveredPrinter.h
+#import <ZebraPrint/DiscoveredPrinterNetwork.h>
+#import <ZebraPrint/FieldDescriptionData.h>
+#import <ZebraPrint/FileUtil.h>
+#import <ZebraPrint/FormalUtil.h>
+#import <ZebraPrint/GraphicsUtil.h>
+#import <ZebraPrint/MagCardReader.h>
+#import <ZebraPrint/NetworkDiscover.h>
+#import <ZebraPrint/PrinterStatus.h>
+#import <ZebraPrint/PrinterStatusMessages.h>
+#import <ZebraPrint/ResponseValidator.h>
+#import <ZebraPrint/SGD.h>
+#import <ZebraPrint/SmartCardReader.h>
+#import <ZebraPrint/TcpPrinterConnection.h>
+#import <ZebraPrint/ToolsUtil.h>
+#import <ZebraPrint/ZebraErrorCode.h>
+#import <ZebraPrint/ZebraPrinterConnection.h>
+#import <ZebraPrint/ZebraPrinterFactory.h>
 //! Project version number for ZebraPrint.
 FOUNDATION_EXPORT double ZebraPrintVersionNumber;
 
