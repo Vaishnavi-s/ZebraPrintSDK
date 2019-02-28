@@ -37,5 +37,48 @@ FOUNDATION_EXPORT double ZebraPrintVersionNumber;
 FOUNDATION_EXPORT const unsigned char ZebraPrintVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <ZebraPrint/PublicHeader.h>
+#import <Foundation/Foundation.h>
+
+@interface ZebraPrint : NSObject{
+    
+}
+    
++(void)performStatusDemo;
+    
+    @end
+@implementation StatusDemo
+    
++(void) performStatusDemo {
+    
+    id<ZebraPrinterConnection, NSObject> connection = nil;
+    NSArray *printerStatusMessagesArray = nil;
+    connection = [[MfiBtPrinterConnection alloc] initWithSerialNumber:@"XXQPJ162400947"] ;
+    BOOL didOpen = [connection open];
+    if(didOpen == YES) {
+        NSError *error = nil;
+        id<ZebraPrinter,NSObject> printer = [ZebraPrinterFactory getInstance:connection error:&error];
+        NSLog(@"Printer:%@",printer);
+        if(printer != nil) {
+            //            PrinterLanguage language = [printer getPrinterControlLanguage];
+            
+            PrinterStatus *status = [printer getCurrentStatus:&error];
+            NSLog(@"Status:%@",status);
+            if (status == nil) {
+                NSLog(@"Error retreiving status");
+            } else {
+                PrinterStatusMessages *printerStatusMessages = [[PrinterStatusMessages alloc] initWithPrinterStatus:status] ;
+                NSLog(@"Message:%@",printerStatusMessages);
+                printerStatusMessagesArray = [printerStatusMessages getStatusMessage];
+                NSLog(@"MessageArray:%@",printerStatusMessagesArray);
+                
+            }
+        } else {
+            NSLog(@"Could not Detect Language");
+        }
+    } else {
+        NSLog(@"Could not connect to printer");
+    }
+}
+    @end
 
 
