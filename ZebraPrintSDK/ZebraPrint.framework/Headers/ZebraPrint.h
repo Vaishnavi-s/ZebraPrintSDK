@@ -46,7 +46,7 @@ FOUNDATION_EXPORT const unsigned char ZebraPrintVersionString[];
 +(void)performStatusDemo;
     
     @end
-@implementation StatusDemo
+@implementation ZebraPrint
     
 +(void) performStatusDemo {
     
