@@ -27,6 +27,7 @@
 #import <ZebraPrint/ZebraErrorCode.h>
 #import <ZebraPrint/ZebraPrinterConnection.h>
 #import <ZebraPrint/ZebraPrinterFactory.h>
+#import <ZebraPrint/StatusDemo.h>
 //! Project version number for ZebraPrint.
 FOUNDATION_EXPORT double ZebraPrintVersionNumber;
 

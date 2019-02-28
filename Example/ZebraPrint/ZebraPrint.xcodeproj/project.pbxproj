@@ -21,9 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		44B983FC2223F80400B9AE8D /* StatusViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 44B983FB2223F80400B9AE8D /* StatusViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		44B983FE2223F9FF00B9AE8D /* StatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B983FD2223F9FF00B9AE8D /* StatusViewController.m */; };
 		44EA7BAE2227C5D5004C91D5 /* DiscoveredPrinter.h in Headers */ = {isa = PBXBuildFile; fileRef = 659A334E22001D390035EA70 /* DiscoveredPrinter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44EA7BB222280E00004C91D5 /* StatusDemo.h in Headers */ = {isa = PBXBuildFile; fileRef = 44EA7BB122280E00004C91D5 /* StatusDemo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		659A334522001C4B0035EA70 /* ZebraPrint.h in Headers */ = {isa = PBXBuildFile; fileRef = 659A334322001C4B0035EA70 /* ZebraPrint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		659A336022001D3A0035EA70 /* DiscoveredPrinterNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 659A334B22001D390035EA70 /* DiscoveredPrinterNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		659A336122001D3A0035EA70 /* NetworkDiscoverer.h in Headers */ = {isa = PBXBuildFile; fileRef = 659A334C22001D390035EA70 /* NetworkDiscoverer.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -48,8 +47,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		44B983FB2223F80400B9AE8D /* StatusViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StatusViewController.h; sourceTree = "<group>"; };
-		44B983FD2223F9FF00B9AE8D /* StatusViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatusViewController.m; sourceTree = "<group>"; };
+		44EA7BB122280E00004C91D5 /* StatusDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StatusDemo.h; sourceTree = "<group>"; };
 		659A334022001C4B0035EA70 /* ZebraPrint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZebraPrint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		659A334322001C4B0035EA70 /* ZebraPrint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZebraPrint.h; sourceTree = "<group>"; };
 		659A334422001C4B0035EA70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -114,6 +112,7 @@
 				659A335A22001D3A0035EA70 /* GraphicsUtil.h */,
 				659A335822001D3A0035EA70 /* MagCardReader.h */,
 				659A335522001D3A0035EA70 /* MfiBtPrinterConnection.h */,
+				44EA7BB122280E00004C91D5 /* StatusDemo.h */,
 				659A334C22001D390035EA70 /* NetworkDiscoverer.h */,
 				659A335622001D3A0035EA70 /* PrinterStatus.h */,
 				659A334D22001D390035EA70 /* PrinterStatusMessages.h */,
@@ -129,8 +128,6 @@
 				659A335922001D3A0035EA70 /* ZplPrintMode.h */,
 				659A334322001C4B0035EA70 /* ZebraPrint.h */,
 				659A334422001C4B0035EA70 /* Info.plist */,
-				44B983FB2223F80400B9AE8D /* StatusViewController.h */,
-				44B983FD2223F9FF00B9AE8D /* StatusViewController.m */,
 			);
 			path = ZebraPrint;
 			sourceTree = "<group>";
@@ -145,6 +142,7 @@
 				44EA7BAE2227C5D5004C91D5 /* DiscoveredPrinter.h in Headers */,
 				659A334522001C4B0035EA70 /* ZebraPrint.h in Headers */,
 				659A336022001D3A0035EA70 /* DiscoveredPrinterNetwork.h in Headers */,
+				44EA7BB222280E00004C91D5 /* StatusDemo.h in Headers */,
 				659A336122001D3A0035EA70 /* NetworkDiscoverer.h in Headers */,
 				659A336222001D3A0035EA70 /* PrinterStatusMessages.h in Headers */,
 				659A336422001D3A0035EA70 /* SGD.h in Headers */,
@@ -156,7 +154,6 @@
 				659A336A22001D3A0035EA70 /* MfiBtPrinterConnection.h in Headers */,
 				659A336B22001D3A0035EA70 /* PrinterStatus.h in Headers */,
 				659A336C22001D3A0035EA70 /* FormatUtil.h in Headers */,
-				44B983FC2223F80400B9AE8D /* StatusViewController.h in Headers */,
 				659A336D22001D3A0035EA70 /* MagCardReader.h in Headers */,
 				659A336E22001D3A0035EA70 /* ZplPrintMode.h in Headers */,
 				659A336F22001D3A0035EA70 /* GraphicsUtil.h in Headers */,
@@ -259,7 +256,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44B983FE2223F9FF00B9AE8D /* StatusViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
